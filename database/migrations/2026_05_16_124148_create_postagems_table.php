@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('postagems', function (Blueprint $table) {
             $table->id();
+            $table->string('titulo');
+            $table->longText('texto');
+            $table->string('imagem');
+            $table->boolean('ativo');
+            $table->string('autor');
             $table->timestamps();
         });
     }
